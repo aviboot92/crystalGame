@@ -1,0 +1,79 @@
+
+body{
+	background-image: url(https://images.unsplash.com/photo-1460602594182-8568137446ce?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6a89cf0d31c8ed23b35aaf9a119a9f5&w=1000&q=80);
+}
+
+.jumbotron{
+	background-image: url(https://cdn2.collective-evolution.com/assets/uploads/2017/02/crystals.jpg);
+	color: #990707;;
+	margin: 20px auto;
+	/*Helps to fits the image in background*/
+	background-size: cover;
+	font-family: 'Eater', cursive;
+
+
+
+}
+#dis1{
+	color: blue;
+}
+h1{
+	color: #990707;
+}
+
+.winDiv{
+	background-image: url(https://images.pexels.com/photos/268415/pexels-photo-268415.jpeg?auto=compress&cs=tinysrgb&h=350);
+	background-size: cover;
+	height: auto;
+	width: 150px;
+	font-family: 'Eater', cursive;
+	float: left;
+	position: relative;
+	margin: 10px;
+}
+.winCounterDis{
+	background-image: url(https://images.pexels.com/photos/268415/pexels-photo-268415.jpeg?auto=compress&cs=tinysrgb&h=350);
+	background-size: cover;
+	height: auto;
+	width: 150px;
+	font-family: 'Eater', cursive;
+	float: left;
+	position: relative;
+	margin: 10px;
+}
+button{
+	height: auto;
+	width: 150px;
+	font-family: 'Eater', cursive;
+	float: left;
+	position: relative;
+	margin: 10px;
+
+}
+#ham{
+	position: relative;
+	float: right;
+}
+
+.protoIMG{
+	width: 100px;
+	height: 196px;
+	margin: 10px;
+}
+
+.scDisplay{
+	font-size: 50px;
+	  text-align: center;
+	  padding: 0 50px;
+}
+#WinScore{
+	color: #ce9035;
+}
+.scoreHeadDisplay{
+	color: #820000;
+}
+#protoIMG{
+	width: 100px;
+	height: 196px;
+	margin: 10px;
+}
