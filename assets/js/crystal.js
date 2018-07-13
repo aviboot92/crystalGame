@@ -14,6 +14,7 @@
 //                alert("Doesn't Work");
 //              }
 //           });
+//Global Scope
 var winScore = 0;
 var youScore = 0;
 // Wins and Losses Counter
@@ -53,11 +54,10 @@ function crystalVaue(){
 //Connecting Crystals 
 $(document).ready(function(){
 	$("#blue").on("click", function(){
-		// alert("Blue connected");
 		youScore+=blue;
 		console.log("You Score updating as "+youScore);
 		$("#YouScore").text(youScore);
-		winOrLoss();	
+		winOrLoss(youScore);	
 	});
 
 	$("#red").on("click", function(){
@@ -65,7 +65,7 @@ $(document).ready(function(){
 		youScore+=red;
 		console.log("You Score updating as "+youScore);
 		$("#YouScore").text(youScore);
-		winOrLoss();
+		winOrLoss(youScore);
 	});
 
 	$("#green").on("click", function(){
@@ -73,7 +73,7 @@ $(document).ready(function(){
 		youScore+=green;
 		console.log("You Score updating as "+youScore);
 		$("#YouScore").text(youScore);
-		winOrLoss();
+		winOrLoss(youScore);
 
 	});
 
@@ -82,7 +82,7 @@ $(document).ready(function(){
 		youScore+=white;
 		console.log("You Score updating as "+youScore);
 		$("#YouScore").text(youScore);
-		winOrLoss();
+		winOrLoss(youScore);
 	});
 
 });
@@ -91,15 +91,17 @@ function gameMode(){
 					//Assignig Values								
 								winNumber();
 								crystalVaue();
-								console.log("IIII"+youScore);							
+								this.youScore=0;
+								//console.log("IIII"+youScore);	
+								
 				}
 
 gameMode();
 	// Win and Loose Logic Function
-function winOrLoss(){	
-	if ((youScore !== winScore) && (youScore < winScore)) {
+function winOrLoss(localYouScore){	
+	if ((localYouScore !== winScore) && (localYouScore < winScore)) {
 		console.log("Keep playing Dear");
-		} else if (youScore === winScore) {
+		} else if (localYouScore === winScore) {
 		console.log("You are a winner");
 		win+=1;
 		console.log("Wins"+win);
@@ -107,7 +109,7 @@ function winOrLoss(){
 		$("#winC").text(win);
 		reset();
 		gameMode();
-	} else if(youScore > winScore) {
+	} else if(localYouScore > winScore) {
 		console.log("You Loose");
 		console.log("Game Over");
 		loss+=1;
@@ -121,5 +123,5 @@ function winOrLoss(){
 // Reset Function for fresh Game
 function reset(){
 	winScore = 0;
-    youScore = 0;
+    //youScore = 0;
 }

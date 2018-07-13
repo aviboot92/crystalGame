@@ -1,11 +1,11 @@
 
 body{
-	background-image: url(https://images.unsplash.com/photo-1460602594182-8568137446ce?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6a89cf0d31c8ed23b35aaf9a119a9f5&w=1000&q=80);
+	background-image: url(https://images.pexels.com/photos/953214/pexels-photo-953214.jpeg?auto=compress&cs=tinysrgb&h=350);
 }
 
 .jumbotron{
-	background-image: url(https://cdn2.collective-evolution.com/assets/uploads/2017/02/crystals.jpg);
-	color: #990707;;
+	background-image: url(https://images.pexels.com/photos/953214/pexels-photo-953214.jpeg?auto=compress&cs=tinysrgb&h=350);
+	color: 	#edfdd5;
 	margin: 20px auto;
 	/*Helps to fits the image in background*/
 	background-size: cover;
@@ -53,6 +53,7 @@ button{
 #ham{
 	position: relative;
 	float: right;
+	/*display: block;*/
 }
 
 .protoIMG{
